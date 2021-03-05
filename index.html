@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
 
-        <title>Painting Estimator</title>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 
-    </head>
+    <title>Painting Estimator</title>
 
-    <body>
-        <h1>Painting Estimator</h1>
+</head>
 
-        <div class="maindiv">
-           <h2>This is an estimator that will make your painting preparation process easier</h2> 
-           
-           <label for="typePainting"> Choose what you are painting.</label>  
-           <select name="typePainting" id="type">
-               <option value="interior">Interior</option>
-               <option value="exterior">Exterior</option>
-           </select>
+<body>
+    <h1>Painting Estimator</h1>
 
+    <div class="maindiv">
+        <h2>This is an estimator that will make your painting preparation process easier</h2>
+
+        <div class="placeSelector">
+            <label for="typePainting"> Choose what you are painting:</label>
+            <select name="typePainting" id="place" onchange="placeSelector()">
+                <option value="Interior">Interior</option>
+                <option value="Exterior">Exterior</option>
+            </select>
         </div>
-    
-    </body>
+       
+        <div class="nextSelectingStage"> 
+            <span id="startCalc"></span>
+        </div>
+
+
+    </div>
+
+</body>
+
 </html>
